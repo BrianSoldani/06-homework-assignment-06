@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    
+
+    <section class="top-banner">
+
+        <div class="container">
+      
+            <div class="row">
+    
+                <div class="col-md-3">
+                    <!-- Saved Search Section -->
+                    <p id="citySearch">City Search History</p>
+                         
+                          <ul id="city-list"></ul>
+                </div>
+                    
+                <br>
+
+                <div class="col-md-9">
+                   
+                    <h1 class="heading">Weather Dashboard</h1>
+                        
+                    <p id="currentDay" class="lead"></p>
+                 
+                  </div>
+
+            </div>
+
+            <br>
+            <br>
+
+             <!-- Search Box Section -->
+
+            <div class="search">
+
+                <form id="city-form" method="POST">
+
+                    <input type="text" placeholder="Search for a city" autofocus name="city-text" id="city-text">
+                      
+                          <button type="submit">SUBMIT</button>
+            
+                            <span class="msg"></span>
+          
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- Dynamically Generated Weather and Forecast Sections -->
+
+    <section class="ajax-section">
+        
+        <div class="container">
+            
+              <h2 class="UVIndex"></h2>
+
+            <br>
+
+                <ul class="cities"></ul>
+
+        </div>
+      
+        <div class="container">
+
+              <h2 class="forecast" id="forecast">5 Day Forecast</h2>
+
+                <ul class="forecast5"></ul>
+
+        </div>
+
+    </section>
+      
+      <!-- Java Script -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+      <script src="script.js"></script>
+        
+
+</body>
+</html>
